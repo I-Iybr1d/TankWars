@@ -1,0 +1,9 @@
+renderer                        -directive?
+    Scene                       -directive
+        camera                  -directive
+            [input] transform   -property
+        gameobject              -directive
+            [input] transform   -property
+
+            mesh                -directive
+            material            -directive
