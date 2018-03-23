@@ -1,5 +1,5 @@
-import { Transform } from "./Transform";
+import { Transform } from './Transform';
 
-export interface GameObject{
+export interface GameObject {
     transform: Transform;
 }

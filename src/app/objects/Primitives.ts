@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as THREE from 'three';
 
-@Injectable()
 export class Cube {
 
   private _geometry: THREE.BoxGeometry;
@@ -22,7 +21,7 @@ export class Cube {
   set material(material: THREE.MeshBasicMaterial) {
     this._material = material;
   }
- 
+
   constructor(geometry?: THREE.BoxGeometry, material?: THREE.MeshBasicMaterial) {
     this._geometry = geometry ? geometry : new THREE.BoxGeometry(10, 10, 10);
     this._material = material ? material : new THREE.MeshBasicMaterial({ color : 0xFFFFFF, wireframe: true });
